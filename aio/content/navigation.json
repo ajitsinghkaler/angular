@@ -645,6 +645,11 @@
           "tooltip": "Learn how to deploy your Angular app."
         },
         {
+          "url": "guide/debugging",
+          "title": "Debugging with ng",
+          "tooltip": "Learn how to debug your Angular app using ng."
+        },
+        {
           "title": "Dev Tool Integration",
           "tooltip": "Integrate with your development environment and tools.",
           "children": [
