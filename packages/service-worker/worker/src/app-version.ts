@@ -179,7 +179,7 @@ export class AppVersion implements UpdateSource {
 
     // Next, check if this is a navigation request for a route. Detect circular
     // navigations by checking if the request URL is the same as the index URL.
-    if (req.url !== this.manifest.index && this.isNavigationRequest(req)) {
+    if (req.url !== this.manifest.index && this.isNavigationRequest(req) && req.method === 'GET') {
       // This was a navigation request. Re-enter `handleFetch` with a request for
       // the URL.
       return this.handleFetch(this.adapter.newRequest(this.manifest.index), context);
